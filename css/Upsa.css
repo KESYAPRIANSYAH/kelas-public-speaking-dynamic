@@ -1,14 +1,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
-  box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Roboto",  sans-serif;
 }
 
 /* iconstyle */
@@ -21,8 +17,9 @@
 .header {
   background-color: white;
   display: flex;
-  margin-top: 52px;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 #carouselExampleControls {
   padding: 60px;
@@ -34,13 +31,13 @@
   align-items: center;
   gap: 200px;
   color: white;
-  height: 20vh;
+  height: 10vh;
 }
 .praktik {
-  font-size: 36px;
+  font-size: 24px;
 }
 .teori {
-  font-size: 36px;
+  font-size: 24px;
 }
 .slider {
   background-color: #eeeeee;
@@ -50,32 +47,23 @@
 }
 .Caradaftar h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 24px;
+  font-weight: bold;
+
+  margin-top: 20px;
 }
 
-.foto {
-  display: flex;
-  justify-content: center; /* Menengahkan secara horizontal */
-  align-items: center;
-}
 .foto img {
   width: 600px;
   height: auto;
-  position: absolute;
-  right: 200px;
-  margin-top: 266px;
 }
 
-.home {
-  padding-top: 100px;
-  margin: 150px;
-}
 .home h1 {
-  font-size: 46px;
+  font-size: 38px;
   font-weight: bold;
 }
 .home p {
-  font-size: 25px;
+  font-size: 24px;
 }
 .btn {
   background-color: #0066ff;
@@ -87,18 +75,22 @@
 .tujuan {
   background-color: #068fff;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150vh;
 }
 
 .tujuankelas {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  margin-top: 200px;
+  gap: 50px;
+  margin-top: 100px;
 }
 .tujuan h1 {
-  margin-top: 100px;
-  font-size: 38px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -110,7 +102,7 @@
   height: auto;
 }
 .isitujuan p {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .benefit {
@@ -143,8 +135,13 @@
 .after {
   margin-top: 100px;
 }
+.benefit2 h1 {
+  font-size: 24px;
+
+  font-weight: bold;
+}
 .after p {
-  font-size: 25px;
+  font-size: 18px;
   text-align: center;
 }
 .jurney {
@@ -195,8 +192,9 @@
   margin-top: 100px;
 }
 .testimoni h1 {
-  font-size: 35px;
+  font-size: 24px;
   text-align: center;
+  font-weight: bold;
 }
 #ulasan {
   margin-top: 50px;
@@ -217,8 +215,9 @@
   flex-wrap: wrap;
 }
 .aftersales img {
-  width: 500px;
+  width: 300px;
   height: auto;
+  border-radius: 20px;
   margin-top: 80px;
 }
 .cardbody {
@@ -226,7 +225,7 @@
   margin-left: 20px;
 }
 .cardbody h5 {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
 }
 .cardbody p {
@@ -240,7 +239,7 @@
   margin-top: 80px;
 }
 .kenalan h1 {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
 }
 .kenalan h2 {
@@ -261,19 +260,21 @@
   background-color: #ffff;
   color: #068fff;
 }
+.navbar-brand {
+  margin-left: 90px;
+}
 
 .collapse {
   justify-content: end;
-  margin: 20px;
 }
 .nav-item {
-  font-size: 20px;
+  font-size: 15px;
   margin: 5px;
 }
 
 .logo {
   height: auto;
-  width: 300px;
+  width: 150px;
   margin-left: 60px;
 }
 .aset1 {
@@ -311,28 +312,13 @@
 }
 .daftar {
   margin-top: 50px;
-  font-size: 25px;
+  font-size: 18px;
 }
 .daftar p {
-  font-size: 25px;
+  font-size: 18px;
   text-align: center;
-}
-.apakontenbebe {
-  background-color: #d9d9d9;
-}
-.apakontenbebe h1 {
-  text-align: center;
-  font-size: 35px;
-  font-weight: bold;
-}
-.apakontenbebe p {
-  text-align: center;
-  font-size: 20px;
 }
 
-.kontenbebe {
-  margin-top: 100px;
-}
 .bebe {
   margin-top: 50px;
   margin-left: 80px;
@@ -357,13 +343,31 @@
   color: black;
 }
 @media screen and (max-width: 1143px) {
-  .home {
-    padding-top: 0px;
-    margin: 50px;
-    margin-left: 25vw;
+  .header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
+  .home h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .home p {
+    font-size: 18px;
+  }
+  .foto img {
+    bottom: 0px;
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin-top: 0px;
+    right: 0px;
+  }
+
   .tujuankelas {
-    gap: 8px;
+    gap: 50px;
     margin-top: 100px;
   }
   .isitujuan img {
@@ -383,10 +387,10 @@
     height: 10vh;
   }
   .praktik {
-    font-size: 26px;
+    font-size: 20px;
   }
   .teori {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .isibenefit {
@@ -397,19 +401,7 @@
     width: 37px;
     height: 30px;
   }
-  .foto {
-    margin-top: 100px;
-    margin-left: 25vw;
-  }
 
-  .foto img {
-    bottom: 0px;
-    width: 500px;
-    height: auto;
-    position: relative;
-    margin-top: 0px;
-    right: 0px;
-  }
   .jurney h1 {
     color: white;
     font-size: 24px;
@@ -440,15 +432,13 @@
     text-align: center;
     font-size: 30px;
   }
-  .apakontenbebe h1 {
-    font-size: 20px;
-  }
+
   .nav-item {
     font-size: 15px;
     font-weight: 200;
   }
   .aftersales img {
-    width: 600px;
+    width: 400px;
     height: auto;
     margin-top: 50px;
   }
@@ -457,25 +447,6 @@
     padding: 50px;
   }
 
-  .apakontenbebe h1 {
-    text-align: center;
-    font-size: 25px;
-  }
-  .apakontenbebe p {
-    text-align: center;
-    font-size: 20px;
-  }
-  .home {
-    text-align: center;
-    padding-top: 0px;
-  }
-  .home h1 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .home p {
-    font-size: 24px;
-  }
   .after1 {
     width: 200px;
     height: auto;
@@ -503,19 +474,10 @@
     margin-top: 50px;
   }
   .testimoni h1 {
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
   }
 
-  .header h1 {
-    font-size: 30px;
-  }
-  .isi {
-    padding-top: 50px;
-  }
-  .header p {
-    font-size: 20px;
-  }
   .profil {
     padding-top: 50px;
   }
@@ -529,7 +491,7 @@
   }
   .text {
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 18px;
   }
 
   .hero h1 {
@@ -588,6 +550,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+
+  .logo {
+    width: 100px;
+  }
   .harga img {
     width: 300px;
     height: auto;
@@ -599,14 +568,15 @@
   .teori {
     font-size: 16px;
   }
-  .home {
-    padding-top: 0px;
-    text-align: center;
+  .header {
+    flex-direction: column;
+  }
+  .foto {
+    order: -1;
     margin: 10px;
-    margin-left: 10vw;
   }
   .home {
-    margin-left: 15vw;
+    text-align: center;
   }
   .home h1 {
     font-size: 20px;
@@ -621,7 +591,11 @@
     height: auto;
   }
   .tujuankelas {
+    gap: 10px;
     margin-top: 10px;
+  }
+  .tujuan {
+    height: 50vh;
   }
   .tujuan h1 {
     margin-top: 50px;
@@ -660,12 +634,12 @@
   }
   .testimoni {
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 100px;
     text-align: center;
   }
 
   .testimoni h1 {
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
   }
   .apakontenbebe p {
@@ -727,13 +701,9 @@
   #carouselExampleControls {
     padding: 10px;
   }
-  .foto {
-    margin-left: 15vw;
-    padding-top: 0px;
-  }
+
   .foto img {
     width: 250px;
-    margin-top: 0px;
   }
 
   #ulasan {
